@@ -1,0 +1,1 @@
+import time, threading; threading.Thread(target=lambda: (time.sleep(1), print("Hello"), threading.Thread(target=lambda: exec(__import__('threading').current_thread().name)).start()), daemon=True).start()
